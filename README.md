@@ -25,7 +25,7 @@ limactl start ./docker.yaml
 ## 環境変数の設定
 
 `.zshrc`に下記を追記する。
-```
+```zsh
 export DOCKER_HOST=$(limactl list docker --format 'unix://{{.Dir}}/sock/docker.sock')
 ```
 
