@@ -1,4 +1,4 @@
-# Install Docker on Lima （M1）
+# Install Docker on Lima (M1)
 
 ## Lima & Docker のインストール
 
@@ -44,6 +44,15 @@ docker/compose（GitHub）: https://github.com/docker/compose/releases<br>
 docker compose version
 ```
 
+### Homebrewでインストール
+
+```
+brew install docker-compose
+```
+
+Homebrewのdocker-composeパッケージがv2に対応しているようなので、今後はこちらを利用しても大丈夫そう。<br>
+https://formulae.brew.sh/formula/docker-compose
+
 ## シェル起動時に仮想マシンを起動
 
 PCの再起動を行うと、仮想マシンは`Stopped`の状態になる。<br>
@@ -52,7 +61,7 @@ PCの再起動を行うと、仮想マシンは`Stopped`の状態になる。<br
 limactl start docker
 ```
 
-## Limaコマンド
+## Lima コマンド
 
 ```
 # VM（仮想マシン）の状態を一覧表示
